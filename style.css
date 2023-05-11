@@ -1,0 +1,50 @@
+/*  Prefix styling  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*  Creating space for the main header top of page  */
+h1.title {
+  padding: 1.25rem;
+}
+
+/*  To align the main section title and basket button full width, so it dosent get affected by the flex of the bootstrap cards */
+.mainTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.productTitle {
+  font-size: 1.125em;
+}
+
+/*  Container grid display  */
+.container  {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+/*  Card Dimensions */
+.card {
+  width: 150px;
+}
+
+.card-header {
+  height: 150px;
+}
+
+/*  Images  */
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
